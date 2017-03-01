@@ -110,7 +110,7 @@
             
         
             
-            <style> #map_173a451771df4f55abec626c01699025 {
+            <style> #map_37cf64a2476a48a08d870bfca8c64170 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -126,7 +126,7 @@
             
         
             
-            <div class="folium-map" id="map_173a451771df4f55abec626c01699025" ></div>
+            <div class="folium-map" id="map_37cf64a2476a48a08d870bfca8c64170" ></div>
         
         
         
@@ -140,8 +140,8 @@
             var northEast = L.latLng(90, 180);
             var bounds = L.latLngBounds(southWest, northEast);
 
-            var map_173a451771df4f55abec626c01699025 = L.map('map_173a451771df4f55abec626c01699025', {
-                                           center:[45.372,-121.697],
+            var map_37cf64a2476a48a08d870bfca8c64170 = L.map('map_37cf64a2476a48a08d870bfca8c64170', {
+                                           center:[31.471132,74.26005],
                                            zoom: 3,
                                            maxBounds: bounds,
                                            layers: [],
@@ -151,7 +151,7 @@
         
         
             
-            var tile_layer_55faac7c51934168b3491262c6a0ac54 = L.tileLayer(
+            var tile_layer_25d85c18f9b043f0b5c2d81681f7eb21 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -159,8 +159,44 @@
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_173a451771df4f55abec626c01699025);
+                ).addTo(map_37cf64a2476a48a08d870bfca8c64170);
 
+        
+        
+            
+
+            var marker_6409fa14b71c4d2d88ad8e82244ed925 = L.marker(
+                [31.469935,74.260096],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_37cf64a2476a48a08d870bfca8c64170);
+            
+        
+            
+
+                var icon_9a563275c67c4ce8ada120957b13b648 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6409fa14b71c4d2d88ad8e82244ed925.setIcon(icon_9a563275c67c4ce8ada120957b13b648);
+            
+        
+            
+            var popup_262db8318f6b49a9bd19c2f0cafa804b = L.popup({maxWidth: '500'});
+
+            
+                var html_d06d5681313d4400b077a1f287d907f7 = $('         <div id="html_d06d5681313d4400b077a1f287d907f7"                 style="width: 100.0%; height: 100.0%;">                 Zam Zam Tower</div>                 ')[0];
+                popup_262db8318f6b49a9bd19c2f0cafa804b.setContent(html_d06d5681313d4400b077a1f287d907f7);
+            
+
+            marker_6409fa14b71c4d2d88ad8e82244ed925.bindPopup(popup_262db8318f6b49a9bd19c2f0cafa804b);
+
+            
         
         
         
